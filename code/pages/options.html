@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>install</title>
+    <link rel="stylesheet" href="../css/option.css">
+</head>
+
+<body>
+    <div id="success">
+        <h1>设置成功</h1>
+    </div>
+    <div class="app">
+        <ul class="install-list">
+            <h1 style="text-align: center;">ASOUL插件设置</h1>
+            <li class="install-item">
+                <input style="width: 18px; height: 18px;" type="checkbox" id="quickSearch">
+                使用搜索快捷键shift+S
+            </li>
+            <li class="install-item">
+                <input style="width: 18px; height: 18px;" type="checkbox" id="quickRun">
+                迅速开溜快捷键ctrl+shift+S
+            </li>
+            <li class="install-item">
+                迅速开溜搜索内容
+                <br>（过于冷门关键词可能无法触发哦~~~）
+                <input placeholder="默认asoul" style="width: 400px; height: 25px;" type="text" id="RunContent">
+            </li>
+            <li class="install-item">
+                <input style="width: 18px; height: 18px;" type="checkbox" id="autoSetColor">
+                自动设置滤镜颜色
+            </li>
+            <li class="install-item">
+                <input type="color" id="mainColor" data-asoul="false">
+                自定义滤镜颜色
+            </li>
+            <li class="install-item">
+                <h5 style="text-align: center;">
+                    一键设置ASOUl相关颜色
+                </h5>
+                <div id="imgs">
+                    <label class="picAndCheck">
+                        <img src="../img/asoulImg/乃琳表情包/png/1.png">
+                        <input type="radio" name="setOnce" value="#efe6e1">
+                        乃琳白
+                    </label>
+                    <label class="picAndCheck">
+                        <img src="../img/asoulImg/向晚表情包/png/10.png">
+                        <input type="radio" name="setOnce" value="#c4c7f6">
+                        向晚紫
+                    </label>
+                    <label class="picAndCheck">
+                        <img src="../img/asoulImg/嘉然表情包/png/1.png">
+                        <input type="radio" name="setOnce" value="#f2adad">
+                        嘉然粉
+                    </label>
+                    <label class="picAndCheck">
+                        <img src="../img/asoulImg/珈乐表情包/png/1.png">
+                        <input type="radio" name="setOnce" value="#726889">
+                        珈乐紫
+                    </label>
+                    <label class="picAndCheck">
+                        <img src="../img/asoulImg/贝拉表情包/400png/1.png">
+                        <input type="radio" name="setOnce" value="#ef4159">
+                        贝拉红
+                    </label>
+                </div>
+            </li>
+            <li class="control">
+                <input type="reset" id="reset" value="重置">
+                <input type="submit" id="submit" value="提交">
+            </li>
+            <li class="author">
+                <p style="cursor: pointer;">悬停查看作者详情👇</p>
+                <div id="authorDetail">
+                    一个平平无奇的嘉心糖罢了🍓
+                    <a target="_blank" href="https://github.com/codeclode">
+                        GitHub:codeclode
+                    </a>
+                    <p>QQ:1581637334</p>
+                    <p>email:PeterLi12138@aliyun.com</p>
+                    <p>关注嘉然,顿顿解馋</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="../js/options.js"></script>
+
+</html>

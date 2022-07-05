@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 设置成功弹出的样式 */
+#success {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #ff6161;
+    border: #3fb7fc 1px solid;
+    border-radius: 3px;
+    opacity: 0;
+    background-color: #c4c7f6;
+    font-size: xx-large;
+    display: none;
+}
+
+/* 设置体样式 */
+.app {
+    border-radius: 3px;
+    box-shadow: 0px 0px 20px 0px rgb(248, 178, 217);
+    background-color: #f2adad;
+    margin: 30px auto;
+    width: 450px;
+}
+
+/* 选项样式 */
+.app input {
+    outline-style: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.app input:hover {
+    cursor: pointer;
+}
+
+.app input:focus {
+    transition: all 0.3s ease-in;
+    box-shadow: 0 0 20px rgba(57, 160, 244, 0.6)
+}
+
+/* 设置列表宽度 */
+.install-list {
+    width: 100%;
+}
+
+/* 设置项和其他公用样式 */
+.install-item,
+.control,
+.author {
+    margin-top: 3px;
+    font-size: x-large;
+    list-style: none;
+    background-color: #f2adcf;
+    border: rgb(58, 199, 255) 1px solid;
+    border-radius: 2px;
+}
+
+/* 设置项样式 */
+.install-item {
+    text-align: center;
+    padding: 5px;
+}
+
+/* 设置下的图片样式 */
+#imgs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.picAndCheck {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.picAndCheck input {
+    display: block;
+    margin-top: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.picAndCheck img {
+    width: 80px;
+    height: 80px;
+    display: inline;
+}
+
+#RunContent{
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 23px;
+}
+/* 提交和重置 */
+.control {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.control input {
+    width: 50px;
+    height: 30px;
+    margin: 0px 70px;
+}
+
+#reset {
+    background-color: rgb(255, 255, 255);
+}
+
+#reset:hover {
+    background-color: rgb(188, 188, 188);
+}
+
+#reset:active {
+    background-color: rgb(122, 121, 121);
+}
+
+#submit {
+    background-color: #b3dbf2;
+}
+
+#submit:hover {
+    background-color: #8ed5ff;
+}
+
+#submit:active {
+    background-color: #3fb7fc;
+}
+
+/* 作者 */
+.author {
+    text-align: center;
+    padding: 5px;
+}
+
+.author>p+div {
+    height: 0;
+}
+
+.author>p:hover+div {
+    height: 170px;
+}
+
+#authorDetail {
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+#authorDetail:hover {
+    height: 170px;
+    overflow: hidden;
+    transition: all 1s ease;
+}

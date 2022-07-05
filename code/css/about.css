@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 调整a标签默认样式 */
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 总控容器 */
+#app {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* asoul介绍 */
+.introduceAll img {
+    width: 300px;
+    height: 120px;
+}
+
+/* 成员介绍容器 */
+#introduce {
+    display: flex;
+}
+
+.introduceOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduceOne img {
+    width: 60px;
+    height: 60px;
+}
+
+#secondCreation {
+    display: flex;
+    font-size: 25px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#secondCreation a {
+    display: block;
+}
